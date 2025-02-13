@@ -16,7 +16,7 @@
     "bump-version": "npm version $(cat ../../VERSION.txt) --allow-same-version"
   },
   "dependencies": {
-    "@types/aws-lambda": "^8.10.136",
+    "@types/aws-lambda": "^8.10.147",
     "aws-sdk": "^2.1529.0",
     "color": "4.2.3",
     "color-name": "1.1.4",
