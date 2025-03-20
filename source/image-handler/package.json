@@ -20,7 +20,7 @@
     "aws-sdk": "^2.1529.0",
     "color": "4.2.3",
     "color-name": "1.1.4",
-    "dayjs": "1.11.10",
+    "dayjs": "1.11.13",
     "sharp": "^0.32.6"
   },
   "devDependencies": {
