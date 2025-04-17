@@ -17,7 +17,7 @@
   },
   "dependencies": {
     "@types/aws-lambda": "^8.10.136",
-    "aws-sdk": "^2.1529.0",
+    "aws-sdk": "^2.1692.0",
     "color": "4.2.3",
     "color-name": "1.1.4",
     "dayjs": "1.11.10",
