@@ -23,7 +23,7 @@
     "@aws-sdk/client-secrets-manager": "^3.835.0",
     "@aws-sdk/client-service-catalog-appregistry": "^3.835.0",
     "axios": "^1.7.4",
-    "moment": "^2.30.0",
+    "moment": "^2.30.1",
     "uuid": "^9.0.1"
   },
   "devDependencies": {
