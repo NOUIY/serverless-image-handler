@@ -36,6 +36,7 @@ bom.json
 **/.idea
 build
 dist
+git-info
 
 # amazon q
 .q

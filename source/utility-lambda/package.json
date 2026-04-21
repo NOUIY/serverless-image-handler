@@ -37,6 +37,10 @@
   },
   "overrides": {
     "minimatch@3": "3.1.5",
-    "fast-xml-parser": "5.3.8"
+    "fast-xml-parser": "5.5.7",
+    "brace-expansion@1": "1.1.13",
+    "handlebars": "4.7.9",
+    "picomatch@2": "2.3.2",
+    "picomatch@4": "4.0.4"
   }
 }

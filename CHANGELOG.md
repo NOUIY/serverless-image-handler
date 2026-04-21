@@ -5,6 +5,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [8.0.4] - 2026-04-20
+
+### Security
+
+- Bump `@aws-amplify/ui-react` to 6.15.3 and `aws-amplify` to 6.16.4 to resolve transitive `lodash` vulnerabilities: [CVE-2026-2950](https://nvd.nist.gov/vuln/detail/CVE-2026-2950), [CVE-2026-4800](https://nvd.nist.gov/vuln/detail/CVE-2026-4800)
+- Bump `vite` to 6.4.2 to mitigate [CVE-2026-39363](https://nvd.nist.gov/vuln/detail/CVE-2026-39363) and [CVE-2026-39365](https://nvd.nist.gov/vuln/detail/CVE-2026-39365)
+- Bump `qs` to 6.14.2 to mitigate [CVE-2026-2391](https://nvd.nist.gov/vuln/detail/CVE-2026-2391)
+
 ## [8.0.3] - 2026-03-02
 
 ### Added

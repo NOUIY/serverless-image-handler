@@ -5,7 +5,7 @@
     "pretest": "npm ci",
     "test": "jest --config jest.unit.config.js --coverage",
     "test:e2e": "jest --config jest.e2e.config.js --testPathIgnorePatterns=throttling.test.ts",
-    "test:e2e:throttling": "jest --config jest.e2e.config.js --testNamePattern='throttling'"
+    "test:e2e:throttling": "SKIP_THROTTLING_REMOVAL=true jest --config jest.e2e.config.js --testNamePattern='throttling'"
   },
   "author": {
     "name": "Amazon Web Services",
@@ -24,6 +24,7 @@
     "zod": "^4.0.14"
   },
   "devDependencies": {
+    "@aws-sdk/client-api-gateway": "^3.1009.0",
     "@aws-sdk/client-cloudformation": "^3.993.0",
     "@aws-sdk/client-cognito-identity-provider": "^3.993.0",
     "@aws-sdk/client-dynamodb": "^3.993.0",
@@ -36,9 +37,14 @@
     "typescript": "^5.9.2"
   },
   "overrides": {
-    "lodash": "^4.17.23",
+    "lodash": "^4.18.0",
     "minimatch@3": "3.1.5",
     "minimatch@9": "9.0.8",
-    "fast-xml-parser": "5.3.8"
+    "fast-xml-parser": "5.5.7",
+    "brace-expansion@1": "1.1.13",
+    "brace-expansion@5": "5.0.5",
+    "handlebars": "4.7.9",
+    "picomatch@2": "2.3.2",
+    "picomatch@4": "4.0.4"
   }
 }
