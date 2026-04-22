@@ -50,7 +50,7 @@ export class DynamoDBClient {
   }
 
   async clearTable() {
-    const maxRetries = 3;
+    const maxRetries = 10;
 
     for (let attempt = 1; attempt <= maxRetries; attempt++) {
       await this.deleteAllItems();

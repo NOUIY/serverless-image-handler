@@ -11,9 +11,8 @@
     "test": "jest --coverage",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
-    "test:integration": "docker build -f Dockerfile.dynamodb-local -t dynamodb-local-patched:latest . && docker-compose -f docker-compose.test.yml up -d && jest --config jest.integration.config.js && docker-compose -f docker-compose.test.yml down",
-    "test:integration:watch": "docker-compose -f docker-compose.test.yml up -d && jest --config jest.integration.config.js --watch",
-    "test:e2e": "jest --config jest.e2e.config.js",
+    "test:integration": "docker build --no-cache -f Dockerfile.dynamodb-local -t dynamodb-local-patched:latest . && docker-compose -f docker-compose.test.yml up -d && NODE_OPTIONS='--experimental-vm-modules' jest --config jest.integration.config.js && docker-compose -f docker-compose.test.yml down",    
+    "test:integration:watch": "docker-compose -f docker-compose.test.yml up -d && NODE_OPTIONS='--experimental-vm-modules' jest --config jest.integration.config.js --watch",    "test:e2e": "jest --config jest.e2e.config.js",
     "lint": "eslint src/**/*.ts",
     "lint:fix": "eslint src/**/*.ts --fix"
   },
@@ -30,7 +29,7 @@
     "express": "^4.18.2",
     "helmet": "^7.1.0",
     "morgan": "^1.10.1",
-    "qs": "^6.14.1",
+    "qs": "^6.14.2",
     "sharp": "^0.34.3",
     "zod": "^4.1.4"
   },
@@ -52,6 +51,14 @@
     "ts-node": "^10.9.1",
     "tsx": "^4.20.6",
     "typescript": "^5.2.2"
+  },
+  "overrides": {
+    "brace-expansion": "2.0.3",
+    "fast-xml-parser": "5.5.7",
+    "brace-expansion@1": "1.1.13",
+    "brace-expansion@2": "2.0.3",
+    "picomatch@2": "2.3.2",
+    "picomatch@4": "4.0.4"
   },
   "engines": {
     "node": ">=18.0.0"

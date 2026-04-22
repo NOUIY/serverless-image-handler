@@ -26,6 +26,12 @@
     "typescript": "^5.3.3"
   },
   "overrides": {
-    "minimatch@3": "3.1.5"
+    "minimatch@3": "3.1.5",
+    "handlebars": "4.7.9",
+    "picomatch@2": "2.3.2",
+    "picomatch@4": "4.0.4",
+    "fast-xml-parser": "5.5.7",
+    "flatted": "3.4.2",
+    "brace-expansion@1": "1.1.13"
   }
 }

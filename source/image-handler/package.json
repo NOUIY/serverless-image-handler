@@ -37,7 +37,11 @@
     "semver": "7.5.4",
     "minimatch@3": "3.1.5",
     "minimatch@5": "5.1.9",
-    "fast-xml-parser": "5.3.8"
+    "fast-xml-parser": "5.5.7",
+    "brace-expansion@1": "1.1.13",
+    "brace-expansion@2": "2.0.3",
+    "picomatch@2": "2.3.2",
+    "picomatch@4": "4.0.4"
   },
   "resolutions": {
     "semver": "7.5.4"
