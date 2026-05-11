@@ -5,6 +5,15 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [8.0.5] - 2026-05-11
+
+### Fixed
+- Migration issue preventing users from upgrading past major version v8.0.0 [#644](https://github.com/aws-solutions/dynamic-image-transformation-for-amazon-cloudfront/issues/644)
+- Animated content in the .gif format had the abiltiy to be converted to non-animated image formats, breaking the animation and serving a still image
+
+### Security
+- Bump `fast-xml-parser` to 5.7.0 to mitigate [CVE-2026-41650](https://github.com/advisories/GHSA-gh4j-gqv2-49f6)
+
 ## [8.0.4] - 2026-04-20
 
 ### Security
